@@ -60,6 +60,12 @@ Webproxy
 
 После завершения ваше приложение сразу станет доступно по адресу https://{ваш_Project_ID}.appspot.com
 
+Обновлять приложение согласно справке https://cloud.google.com/sdk/gcloud/reference/app/update?hl=ru
+
+    cd webproxy
+    git fetch && git merge
+    gcloud app update --no-split-health-checks
+
 
 Лицензия
 --------
